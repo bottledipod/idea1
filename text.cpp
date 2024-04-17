@@ -19,7 +19,7 @@ bool GetInt(string::const_iterator& s_it,
   if (is_neg) value = -value;
   return true;
 }
-
+//nice
 bool GetPath(const string& line, Paths64& paths)
 {
   Path64 p;
