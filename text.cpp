@@ -6,7 +6,7 @@ bool GetInt(string::const_iterator& s_it,
   if (s_it == it_end) return false;
   bool is_neg = (*s_it == '-');
   if (is_neg) ++s_it;
-  string::const_iterator s_it2 = s_it;
+  string::const_iterator s_it2 = s_it;//yes
   while (s_it != it_end && *s_it >= '0' && *s_it <= '9')
   {
     value = value * 10 + static_cast<int64_t>(*s_it++) - 48;
